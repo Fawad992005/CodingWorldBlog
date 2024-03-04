@@ -1,0 +1,16 @@
+{
+    "params":{
+        "local_server":"True",
+        "local_uri":"mysql+mysqldb://root:@localhost/codingworld",
+        "prod_uri":"mysql+mysqldb://root:@localhost/codingworld",
+        "fb_url":"https://facebook.com/codingworld",
+        "tw_url":"https://twitter.com/codingworld",
+        "gh_url":"https://github.com/codingworld",
+        "blog_name":"Coding World",
+        "blog_subheading":"Infinite Knowledge For Programmers",
+        "no_of_post": 2,
+        "admin_name": "fawad",
+        "admin_password": "pakarmy",
+        "api_key":"ccec2d9a-1264-40d6-a727-fcd314a973b8"
+    }
+}

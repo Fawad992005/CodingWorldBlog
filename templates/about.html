@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('{{ url_for('static' , filename= 'assets/img/about-bg.jpg') }}')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="page-heading">
+                    <h1>About Me</h1>
+                    <span class="subheading">This is what we do.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main Content-->
+<main class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <h1>Welcome to Coding World!</h1>
+                <p>
+                At Coding World, we are passionate about creating a space where coding enthusiasts, beginners, and
+                seasoned developers alike can come together to explore the vast and ever-evolving world of programming.
+                Our mission is to provide valuable resources, insightful tutorials, and engaging content that empowers
+                individuals on their coding journey.
+
+                What Sets Us Apart:
+
+                Diverse Learning Paths: Whether you are a beginner taking your first steps into coding or an experienced
+                developer seeking to expand your skills, Coding World offers diverse learning paths to cater to your
+                needs.
+
+                Expert Insights: Our team of experienced developers and industry experts share their insights, tips, and
+                best practices to help you stay updated with the latest trends and advancements in the coding world.
+
+                Community Collaboration: Coding is not just about lines of code; it's about the community that surrounds
+                it. Connect with like-minded individuals, participate in discussions, and share your knowledge with the
+                Coding World community.
+
+                Innovation Hub: Explore innovative projects, coding challenges, and real-world applications. Coding
+                World is not just a learning platform; it's a hub for innovation and creativity.
+
+                Our Vision:
+
+                At Coding World, we envision a world where coding is accessible to everyone. Whether you're dreaming of
+                becoming a software engineer, building your startup, or just want to understand the language of
+                technology, Coding World is here to guide you every step of the way.
+
+                Join Us on the Coding Journey:
+
+                Embark on a journey through the Coding World, where curiosity is celebrated, challenges are embraced,
+                and the possibilities of coding are endless. Whether you're here to learn, share, or simply be inspired,
+                we welcome you to our coding community.
+
+                Stay curious, keep coding, and welcome to Coding World!
+
+                Explore Now</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>
+
+</html>
+{% endblock %}

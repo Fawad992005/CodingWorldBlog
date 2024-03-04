@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('{{ url_for('static',filename='assets/img/home-bg.jpg')}}')">
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="site-heading">
+          <h1>Admin Panel</h1>
+          <span class="subheading">Manage Your Posts</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+  <div class="row gx-4 gx-lg-5 justify-content-center">
+    <div class="col-md-10 col-lg-8 col-xl-7">
+      <h1>ADD/EDIT POSTS</h1>
+      <form id="contactForm" action="/edit/{{post.sno if post and post.sno else '0'}}" method="post"
+        data-sb-form-api-token="ccec2d9a-1264-40d6-a727-fcd314a973b8">
+        <div class="form-floating">
+          <input class="form-control" id="title" name='title' type="text" placeholder="Title..." value="{{post.title}}"
+            data-sb-validations="required" />
+          <label for="name">Title</label>
+        </div>
+        <div class="form-floating">
+          <input class="form-control" id="tline" name='tline' type="text" placeholder="Tagline..."
+            value="{{post.tagline}}" data-sb-validations="required" />
+          <label for="email">Tagline</label>
+        </div>
+        <div class="form-floating">
+          <input class="form-control" id="slug" name='slug' type="tel" placeholder="Slug..." value="{{post.slug}}"
+            data-sb-validations="required" />
+          <label for="phone">Slug</label>
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control" id="content" name='content' placeholder="Enter your content here..."
+            style="height: 12rem" data-sb-validations="required">{{post.content}}</textarea>
+          <label for="message">Content</label>
+        </div>
+        <div class="form-floating">
+          <input class="form-control" id="img_file" name='img_file' type="text" placeholder="Upload image files..."
+            value="{{post.img_file}}" data-sb-validations="required" />
+          <label for="phone">Image files</label>
+        </div>
+        <br />
+        <!-- Submit Button-->
+        <button class="btn btn-outline-secondary btn-lg" id="submitButton" type="submit">Submit</button>
+      </form>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </div>
+</div>
+{% endblock %}
